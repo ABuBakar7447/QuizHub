@@ -1,0 +1,40 @@
+.topic-details{
+    width: 200px;
+    height: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+    text-align: left;
+
+}
+
+.text-design{
+    margin-left: 10px;
+}
+
+.topic-details img{
+    background-color: black;
+    width: 180px;
+    height: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.096);
+    margin: 8px 8px;
+    border-radius: 5px;
+}
+
+.topic-btn{
+    width: 100%;
+    font-weight: bolder;
+    background-color:lightslategray;
+    position: absolute;
+    border: none;
+    border-radius: 0px 0px 5px 5px;
+    bottom: 0;
+}
+
+.topic-btn:focus{
+    background-color: orange;
+}
+
+.topic-btn:hover{
+    background-color: orange;
+}
