@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css'
-
 import { useLoaderData } from 'react-router-dom';
 import Topics from '../Topics/Topics';
 

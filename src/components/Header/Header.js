@@ -9,11 +9,15 @@ const Header = () => {
         <div className='navbar-design'>
            <div className='page-name'>
                 <img src={logo} alt="" />
-                <p>Fitness Club</p>  
+                <p>Quiz Hub</p>  
             </div> 
             
             <nav>
+                
                 <Link to = '/'>Home</Link>
+                
+                <Link to = '/statistics'>Statistics</Link>
+                
             </nav>
         </div>
         
