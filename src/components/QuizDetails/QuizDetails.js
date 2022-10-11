@@ -1,4 +1,4 @@
-
+import './QuizDetails.css'
 import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
@@ -8,7 +8,7 @@ const QuizDetails = () => {
 
 
     return (
-        <div>
+        <div className='quiz-page'>
             {
                 quizDetails.data.questions.map((questions, index) => <Question
                     index={index}
