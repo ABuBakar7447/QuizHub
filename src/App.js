@@ -5,7 +5,7 @@ import Main from './layouts/Main';
 import Home from './components/Home/Home';
 import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
-import QuizDetails from './QuizDetails/QuizDetails';
+import QuizDetails from './components/QuizDetails/QuizDetails';
 
 function App() {
   const router = createBrowserRouter([
