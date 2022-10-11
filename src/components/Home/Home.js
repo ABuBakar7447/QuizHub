@@ -8,7 +8,16 @@ const Home = () => {
     return (
         <div>
 
-            
+        <div className="background-edit">
+            <div className="Interface-edit">
+                
+            <h1>Make Learning Fun.</h1>
+            <p>Every learner is motivated to mastery through assessments, lessons, and practice.</p>
+
+            </div>
+
+        </div>
+
             <div className='topics-container'>
                 {
                     data.data.map(quizTopic =><Topics
