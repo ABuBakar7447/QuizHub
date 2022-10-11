@@ -12,11 +12,12 @@ const Header = () => {
                 <p>Quiz Hub</p>  
             </div> 
             
-            <nav>
+            <nav className='nav-container'>
                 
-                <Link to = '/'>Home</Link>
+                <Link className='nav-items' to = '/'>Home</Link>
                 
-                <Link to = '/statistics'>Statistics</Link>
+                <Link className='nav-items' to = '/statistics'>Statistics</Link>
+                <Link className='nav-items' to = '/blogs'>Blog</Link>
                 
             </nav>
         </div>

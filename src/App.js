@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layouts/Main';
 import Home from './components/Home/Home';
-import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import QuizDetails from './components/QuizDetails/QuizDetails';
+import Blogs from './components/Blogs/Blogs';
 
 function App() {
   const router = createBrowserRouter([
@@ -26,6 +25,13 @@ function App() {
           
           element:<Statistics></Statistics>
         },
+
+        {
+          path: 'blogs',
+          
+          element:<Blogs></Blogs>
+        },
+
         {
           path: '/:id',
           loader: async({params}) =>{

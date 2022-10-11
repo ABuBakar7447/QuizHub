@@ -5,11 +5,13 @@
     border-radius: 5px;
     position: relative;
     text-align: left;
+    background-color: rgba(255, 248, 248, 0.897);
 
 }
 
 .text-design{
     margin-left: 10px;
+    font-weight: bold;
 }
 
 .topic-details img{
@@ -24,7 +26,7 @@
 .topic-btn{
     width: 100%;
     font-weight: bolder;
-    background-color:lightslategray;
+    background-color:#85B3D1FF;
     position: absolute;
     border: none;
     border-radius: 0px 0px 5px 5px;

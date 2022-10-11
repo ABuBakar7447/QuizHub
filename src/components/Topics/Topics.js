@@ -9,8 +9,8 @@ const Topics = ({quizTopic}) => {
         <div className='topic-details'>
             <img src={logo} alt="" />
             <div className='text-design'>
-                <h4>name:{name} </h4>
-                <p>total question:{total}</p>
+                <h4>Name:{name} </h4>
+                <p>Total Question: {total}</p>
             </div>
             
             

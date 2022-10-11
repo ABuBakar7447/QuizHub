@@ -6,7 +6,7 @@ import Topics from '../Topics/Topics';
 const Home = () => {
     const data = useLoaderData();
     return (
-        <div>
+        <div className='headertopic-container'>
 
         <div className="background-edit">
             <div className="Interface-edit">
