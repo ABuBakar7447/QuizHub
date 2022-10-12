@@ -4,7 +4,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin: 8px;
-    
+    margin-bottom: 0px;
+
 }
 
 .page-name{
@@ -27,4 +28,22 @@
 }
 .headertopic-container{
     background-color: #606060FF;
+}
+
+@media only screen and (max-width:688px){
+    .topics-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .background-edit{
+        padding: 100px;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .topics-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }

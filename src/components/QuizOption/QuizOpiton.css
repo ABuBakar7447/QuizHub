@@ -1,7 +1,7 @@
 
 .quiz-option{
     width: 400px;
-    height: 50px;
+    height: 60px;
     border: 2px solid rgba(119, 136, 153, 0.884);
     border-radius: 5px;
     font-size: 14px;
@@ -10,4 +10,17 @@
 .quiz-option:hover{
     background-color: black;
     color: white;
+}
+
+@media only screen and (max-width:688px){
+    .quiz-option{
+        width: 200px;
+        height: 80px;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .quiz-option{
+        width: 240px;
+    }
 }

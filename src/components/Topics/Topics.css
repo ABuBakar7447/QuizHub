@@ -40,3 +40,24 @@
 .topic-btn:hover{
     background-color: orange;
 }
+
+
+@media only screen and (max-width:688px){
+    .topic-details{
+        width: 270px;
+    }
+
+    .topic-details img{
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .topic-details{
+        width: 300px;
+    }
+
+    .topic-details img{
+        width: 280px;
+    }
+}
