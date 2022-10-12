@@ -1,29 +1,45 @@
 import React from 'react';
 import './Question.css'
 import QuizOption from '../QuizOption/QuizOption';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faEye } from '@fortawesome/free-solid-svg-icons'
+
 
 const Question = (props) => {
-  const { questions } = props
+  const { questions, index} = props
   const { correctAnswer, options, question } = questions
 
 
   const handleAddToUseDetails = (event) => {
-    // console.log(event.target.innerText)
+    
     const value = event.target.innerText
-    // console.log(typeof(correctAnswer))
-    // console.log(typeof(value))
+    
     if (value === correctAnswer) {
-      // console.log('True')
+     
       alert('Your answer is correct')
     }
     else {
-      // console.log('false')
+      
+      
       alert('Your answer is incorrect')
+      correctAns()
     }
   }
+
+  const answer = correctAnswer;
+  
+
+  const correctAns = () =>{
+    alert(`Correct answer is: ${answer}`)
+  }
+
+
   return (
     <div className='quiz-container'>
-      <h2 className='question-style'>{question}</h2>
+
+      <FontAwesomeIcon onClick={correctAns} icon={faEye}></FontAwesomeIcon>
+
+      <h2 className='question-style'><span className='quiz-num'>Quiz-{index}:</span>{question}</h2>
       <div className='option-container'>
 
         {

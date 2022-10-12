@@ -2,7 +2,6 @@ import React from 'react';
 import './Home.css'
 import { useLoaderData } from 'react-router-dom';
 import Topics from '../Topics/Topics';
-import Statistics from '../Statistics/Statistics';
 
 const Home = () => {
     const data = useLoaderData();
@@ -26,11 +25,7 @@ const Home = () => {
                     quizTopic={quizTopic}
                     ></Topics>)
                 }
-                {/* {
-                    data.data.map(quizTopic =>
-                    <Statistics key={quizTopic.id}
-                    quizTopic={quizTopic}></Statistics>)
-                } */}
+                
 
             </div>
             
