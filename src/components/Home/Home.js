@@ -2,21 +2,22 @@ import React from 'react';
 import './Home.css'
 import { useLoaderData } from 'react-router-dom';
 import Topics from '../Topics/Topics';
+import Statistics from '../Statistics/Statistics';
 
 const Home = () => {
     const data = useLoaderData();
     return (
         <div className='headertopic-container'>
 
-        <div className="background-edit">
-            <div className="Interface-edit">
-                
-            <h1>Make Learning Fun.</h1>
-            <p>Every learner is motivated to mastery through assessments, lessons, and practice.</p>
+            <div className="background-edit">
+                <div className="Interface-edit">
+                    
+                <h1>Make Learning Fun.</h1>
+                <p>Every learner is motivated to mastery through assessments, lessons, and practice.</p>
+
+                </div>
 
             </div>
-
-        </div>
 
             <div className='topics-container'>
                 {
@@ -25,6 +26,11 @@ const Home = () => {
                     quizTopic={quizTopic}
                     ></Topics>)
                 }
+                {/* {
+                    data.data.map(quizTopic =>
+                    <Statistics key={quizTopic.id}
+                    quizTopic={quizTopic}></Statistics>)
+                } */}
 
             </div>
             
